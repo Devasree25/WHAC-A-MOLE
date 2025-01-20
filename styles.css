@@ -1,4 +1,4 @@
-
+/* General styling */
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #56ccf2, #2f80ed); 
@@ -13,7 +13,6 @@ body {
   text-align: center;
 }
 
-
 h2 {
   margin: 10px;
   font-size: 1.8rem;
@@ -26,10 +25,10 @@ h2 {
   font-weight: bold;
 }
 
-
+/* Grid styling */
 .grid {
-  width: 620px;
-  height: 620px;
+  width: 510px;
+  height: 510px;
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   grid-gap: 10px; 
@@ -41,9 +40,8 @@ h2 {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
 }
 
-
 .square {
-  width: 100%;
+  width: 90%;
   aspect-ratio: 1;
   background: #ffffff;
   border: 2px solid #cccccc;
@@ -56,6 +54,15 @@ h2 {
 /* Mole styling */
 .mole {
   background-image: url('mole.png');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  animation: popUp 0.5s ease-in-out alternate;
+}
+
+/* Bonus Mole styling */
+.bonus {
+  background-image: url('bonus-mole.png'); /* Change the bonus mole image */
   background-size: cover;
   background-position: center;
   border: none;
